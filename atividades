@@ -1,0 +1,17 @@
+CPF:
+	\d{3}[-.]?\d{3}[.-]?\d{3}[.-]?(\d{2})
+
+Mensagem Criptografada:
+	Z\d+(\w)
+
+Exception:
+	(Caused[\s\w:.-]+):([\w\s]+)
+
+Email Alura:
+	([a-z.]{4,14}[a-z\d])@(?:caelum.com.br|alura.com.br)
+
+Validação Email:
+	^([\w-]\.?)+@([\w-]+\.)+([A-Za-z]{2,4})+$
+
+Correios:
+	([\w\s]+)\|(?:\d\d\/\d\d\/\d\d\d\d)\|([\w\s]+)\|(\d{1,4})\|(\d{5}-\d{3})\|(?:[\w\s]{10,})
